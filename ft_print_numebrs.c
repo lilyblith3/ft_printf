@@ -6,7 +6,7 @@
 /*   By: lzari <lzari@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 13:16:14 by lzari             #+#    #+#             */
-/*   Updated: 2024/11/16 16:21:38 by lzari            ###   ########.fr       */
+/*   Updated: 2024/11/17 17:33:44 by lzari            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_print_num(int n)
 {
-	int count;
+	int	count;
 
 	count = 0;
 	if (n == -2147483648)
@@ -32,6 +32,5 @@ int	ft_print_num(int n)
 		count += ft_print_num(n / 10);
 	ft_putchar(n % 10 + '0');
 	count++;
-
 	return (count);
 }

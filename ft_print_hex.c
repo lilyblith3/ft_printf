@@ -6,7 +6,7 @@
 /*   By: lzari <lzari@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 16:18:57 by lzari             #+#    #+#             */
-/*   Updated: 2024/11/17 15:23:16 by lzari            ###   ########.fr       */
+/*   Updated: 2024/11/18 20:26:21 by lzari            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,9 @@
 
 static int	ft_count_hex(unsigned int n)
 {
-	int count = 0;
+	int	count;
 
+	count = 0;
 	while (n > 0)
 	{
 		n /= 16;
@@ -23,6 +24,7 @@ static int	ft_count_hex(unsigned int n)
 	}
 	return (count);
 }
+
 static void	ft_rec_hex(char c, unsigned int n)
 {
 	char	*hex_lower;
@@ -37,6 +39,7 @@ static void	ft_rec_hex(char c, unsigned int n)
 	if (c == 'X')
 		ft_putchar(hex_upper[n % 16]);
 }
+
 int	ft_print_hex(char c, unsigned int n)
 {
 	if (n == 0)
@@ -45,6 +48,5 @@ int	ft_print_hex(char c, unsigned int n)
 		return (1);
 	}
 	ft_rec_hex(c, n);
-	return ft_count_hex(n);
+	return (ft_count_hex(n));
 }
-

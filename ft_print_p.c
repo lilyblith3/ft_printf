@@ -6,7 +6,7 @@
 /*   By: lzari <lzari@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 13:58:23 by lzari             #+#    #+#             */
-/*   Updated: 2024/11/16 17:39:06 by lzari            ###   ########.fr       */
+/*   Updated: 2024/11/18 13:22:54 by lzari            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static int	ft_chr(unsigned long ptr)
 
 int	ft_print_p(unsigned long ptr)
 {
-	int printed_chars;
+	int	printed_chars;
 
 	printed_chars = 0;
 	if (!ptr)
